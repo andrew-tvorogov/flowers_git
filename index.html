@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Flowers Shop</title>
+</head>
+<body>
+<header class="container">
+    <div class="row row-cols-1 row-cols-sm-2 mt-2">
+        <div class="col">
+            <nav class="navbar pl-0 pr-0 pb-0 pt-3">
+                <a class="navbar-brand mb-3 mr-3" href="#">
+                    <svg class="main-header-logo" width="50" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.7283 36.6857C39.6031 28.7661 32.2531 10.9875 24.7993 0.888947C18.5955 10.282 9.39342 27.745 24.7283 36.6857Z"
+                              fill="#C29B9B"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M25.0712 36.1966C24.9581 36.2591 24.8437 36.321 24.728 36.3823C24.6313 36.3262 24.5357 36.2699 24.441 36.2132C16.5687 28.0914 19.4643 19.1933 24.7481 11.9355C30.0282 19.1884 32.9235 28.0793 25.0712 36.1966ZM24.7481 36.4643C24.7643 36.4681 24.7805 36.4719 24.7967 36.4757C24.8066 36.4657 24.8166 36.4558 24.8265 36.4458C24.8004 36.452 24.7743 36.4582 24.7481 36.4643ZM24.6697 36.4458C24.675 36.4511 24.6803 36.4564 24.6856 36.4617L24.6995 36.4757C24.7157 36.4719 24.7319 36.4681 24.7481 36.4643C24.7219 36.4582 24.6958 36.452 24.6697 36.4458Z"
+                              fill="#9A7B7B"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M28.8104 7.10661C27.3966 8.62244 26.0051 10.2642 24.7486 11.9992C23.5539 10.3494 22.2371 8.78396 20.895 7.3309C22.1673 4.90814 23.5447 2.67821 24.7994 0.778412C26.1877 2.65919 27.5723 4.80636 28.8104 7.10661ZM24.827 36.639C41.0983 32.7433 38.5697 13.7408 33.976 2.09494C32.3643 3.52848 30.57 5.22002 28.8104 7.10661C34.1684 17.0611 36.7828 29.8827 25.0717 36.3885C24.9913 36.4721 24.9097 36.5556 24.827 36.639ZM24.7486 36.6577C24.7648 36.6615 24.781 36.6653 24.7972 36.669C24.8072 36.659 24.8171 36.649 24.827 36.639C24.8009 36.6453 24.7748 36.6515 24.7486 36.6577ZM24.6702 36.639C24.593 36.5611 24.5168 36.4832 24.4416 36.4051C12.5487 29.2447 15.9167 16.8114 20.895 7.3309C19.0691 5.35396 17.1965 3.58506 15.5212 2.09494C10.9276 13.7408 8.39896 32.7433 24.6702 36.639ZM24.6702 36.639C24.6755 36.6444 24.6808 36.6497 24.6861 36.6551L24.7 36.669C24.7163 36.6653 24.7324 36.6615 24.7486 36.6577C24.7224 36.6515 24.6963 36.6453 24.6702 36.639Z"
+                              fill="#E2B5B5"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M25.0212 36.7425C34.6023 38.2745 37.2204 34.8538 39.6757 31.6459C39.8347 31.4381 39.9931 31.2312 40.1526 31.0266C40.9125 30.0519 41.5168 29.2203 42.0265 28.5188C43.518 26.466 44.1994 25.5282 45.6014 25.3832C46.7643 25.2629 48.1195 25.8405 49.2868 26.5403C49.2533 26.5112 49.2188 26.4811 49.1833 26.4501C48.1598 25.5567 46.2973 23.9311 44.1743 24.1507C42.2932 24.3453 41.8391 24.5399 38.012 28.7563C37.5871 29.2243 37.1771 29.6909 36.7738 30.15C33.6062 33.755 30.8491 36.8929 24.5197 36.6052C24.5919 36.6249 24.6664 36.6453 24.7429 36.6663C24.8328 36.691 24.9256 36.7164 25.0212 36.7425Z"
+                              fill="#E2B5B5"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M42.344 30.5906C41.3802 31.6787 40.3147 32.8816 39.0129 34.0711C33.7135 38.9133 27.8318 37.5005 24.7791 36.6734C34.4111 38.2053 37.0432 34.7847 39.5116 31.5768C39.6715 31.369 39.8307 31.1621 39.9911 30.9575C40.7551 29.9828 41.3626 29.1511 41.8749 28.4497C43.3745 26.3969 44.0595 25.4591 45.469 25.3141C46.6381 25.1938 48.0006 25.7714 49.1741 26.4712C49.1782 26.4747 49.1822 26.4782 49.1862 26.4817C46.3058 26.1178 44.6045 28.0385 42.344 30.5906Z"
+                              fill="#9A7B7B"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M24.2656 36.7425C14.6846 38.2745 12.0665 34.8538 9.6112 31.6459C9.45215 31.4381 9.29379 31.2312 9.13427 31.0266C8.37433 30.0519 7.77007 29.2202 7.26041 28.5188C5.76887 26.466 5.08749 25.5282 3.68544 25.3832C2.52257 25.2629 1.16735 25.8405 0.000102997 26.5403C0.0335598 26.5112 0.0680485 26.4811 0.103548 26.4501C1.12706 25.5567 2.98957 23.9311 5.11252 24.1507C6.99366 24.3453 7.44773 24.5399 11.2749 28.7563C11.6997 29.2243 12.1097 29.6909 12.5131 30.15C15.6806 33.755 18.4378 36.8929 24.7672 36.6052C24.6949 36.6249 24.6205 36.6453 24.5439 36.6663C24.454 36.691 24.3612 36.7164 24.2656 36.7425Z"
+                              fill="#E2B5B5"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.9429 30.5906C7.90669 31.6787 8.97214 32.8816 10.274 34.0711C15.5734 38.9133 21.455 37.5005 24.5078 36.6734C14.8757 38.2053 12.2437 34.7847 9.77527 31.5768C9.61537 31.369 9.45617 31.1621 9.29579 30.9575C8.5318 29.9828 7.92431 29.1512 7.41192 28.4497C5.91241 26.3969 5.22739 25.4591 3.81784 25.3141C2.64874 25.1938 1.28623 25.7714 0.112728 26.4712C0.108692 26.4747 0.10467 26.4782 0.100662 26.4817C2.98106 26.1178 4.68234 28.0385 6.9429 30.5906Z"
+                              fill="#9A7B7B"/>
+                    </svg>
+                </a>
+                <div class="navbar-nav mr-auto mb-3">
+                    <a class="nav-link main-header-logo-text" href="#">Flowershop</a>
+                </div>
+            </nav>
+        </div>
+        <div class="col">
+            <div class="input-group pt-0 pt-sm-4">
+                <input type="text" class="form-control" placeholder="Search" aria-label="search"
+                       aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="input-group-text btn-search" type="button" id="button-addon2">
+                        <i class="fa fa-search" style="font-size: 1.125rem;" aria-hidden="true"></i>
+                    </button>
+                    <button class="input-group-text btn-search btn-user pl-3" type="button" id="button-addon3">
+                        &nbsp;<i class="fa fa-user" style="font-size: 1.125rem;" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="container">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-sm navbar-light px-0">
+                <button class="navbar-toggler mb-3" type="button" style="font-size: 1rem; line-height: 30px; color: #9A7B7B">Go to Gallery!</button>
+                <button class="navbar-toggler ml-auto mb-3" type="button" data-toggle="collapse"
+                        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="nav mb-3">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Craftwork</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Collaborate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Learn&nbsp;&&nbsp;study</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Our&nbsp;mission</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Employment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Ecology</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle"
+                               id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                World
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Europe</a>
+                                <a class="dropdown-item" href="#">Asia</a>
+                                <a class="dropdown-item" href="#">North America</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link pr-0">About&nbsp;us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</nav>
+<div class="banner">
+    <div class="banner-background-wrapper">
+        <img class="banner-background-image" src="img/banner.png">
+    </div>
+    <div class="banner-overlay-content">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="banner-logo">
+                        <svg fill="#9A7B7B" width="20" height="21" viewBox="0 0 20 21">
+                            <use xlink:href="#globe"/>
+                        </svg>
+                        <div class="banner-text ml-3">
+                            <small>
+                                World Wide Company Inc.<br>
+                                proud to present
+                            </small>
+                        </div>
+                    </div>
+                    <div class="h4 banner-heading font-weight-bold">Almost all amazing<br>
+                        bouquets in one<br>
+                        place!
+                    </div>
+                    <button class="btn btn-primary">Subscribe!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container cards">
+    <div id="out" class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="col p-2">
+            <div class="item-card px-0 py-0" style="background-image: url(img/img_0.png)">
+<!--                <div class="card-image-wrapper">-->
+<!--                    <img class="card-image" alt="" src="img/img_0.png">-->
+<!--                </div>-->
+                <div class="card-overlay">
+                    <div class="card-name">Still life</div>
+                    <div class="card-like">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col p-2">
+            <div class="item-card">
+                <div>
+                Because all of our customers are important, our professional staff is dedicated to making your
+                experience a pleasant one. That is why we always go the extra mile to make your floral gift perfect.
+                Let Just Imagine be your first choice for flowers.
+                </div>
+            </div>
+        </div>
+        <div class="col p-2">
+            <div class="item-card">
+                Card 3
+            </div>
+        </div>
+        <div class="col p-2">
+            <div class="item-card">
+                We have grown from a small floral room, and small retail space to a full running shop with
+                a large aray of products, fresh floral, and CBD products.
+                This is all that really matters!
+            </div>
+        </div>
+        <div class="col p-2">
+            <div class="item-card">
+                Still life
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer-menu-header">About Flowershop</div>
+                    <ul class="footer-column">
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Company Info</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Careers</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">CSR Report</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="footer-menu-header">Where to Buy</div>
+                    <ul class="footer-column">
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Stores</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Online Retailers</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Flowershop NY</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Flowershop Store</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="footer-menu-header">Support</div>
+                    <ul class="footer-column">
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Health & Safety</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Careers</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Enjoy Support</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Still life Support</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Repair Help</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Recycling</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="footer-menu-header">Adults</div>
+                    <ul class="footer-column">
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Info for Parents</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Parential Control</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Collaborate</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Our Mission</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Learn & study</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Employment</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Ecology</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="footer-menu-header">Legal</div>
+                    <ul class="footer-column">
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Documents and Policies</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Terms of Use</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Assets</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="footer-menu-header">Privacy</div>
+                    <ul class="footer-column">
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Interest-Based Ads</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Collocation rules</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-link" href="#">Responsiveness</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!--div class="col"-->
+                <div class="footer-legal">
+                    <svg class="footer-logo" width="29" height="22" viewBox="0 0 29 22" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M14.5149 20.9559C14.4495 20.9921 14.3832 21.0279 14.3162 21.0634C14.2603 21.031 14.2049 20.9983 14.1501 20.9655C9.59242 16.2634 11.2688 11.1119 14.3278 6.91003C17.3848 11.1091 19.061 16.2564 14.5149 20.9559ZM14.3278 21.1109C14.3372 21.1131 14.3466 21.1153 14.356 21.1175C14.3617 21.1117 14.3675 21.106 14.3732 21.1002C14.3581 21.1038 14.343 21.1074 14.3278 21.1109ZM14.2825 21.1002C14.2855 21.1033 14.2886 21.1064 14.2917 21.1094L14.2997 21.1175C14.3091 21.1153 14.3185 21.1131 14.3278 21.1109C14.3127 21.1074 14.2976 21.1038 14.2825 21.1002Z"
+                              fill="#FFD9D9"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M16.6797 4.11438C15.8612 4.99196 15.0556 5.94244 14.3282 6.94691C13.6365 5.99179 12.8741 5.08547 12.0971 4.24423C12.8337 2.84158 13.6311 1.55057 14.3576 0.450684C15.1613 1.53956 15.9629 2.78265 16.6797 4.11438ZM14.3735 21.2121C23.7937 18.9567 22.3298 7.95522 19.6703 1.21289C18.7372 2.04283 17.6984 3.02214 16.6797 4.11438C19.7817 9.87752 21.2953 17.3005 14.5152 21.067C14.4686 21.1154 14.4214 21.1638 14.3735 21.2121ZM14.3282 21.2229C14.3375 21.2251 14.3469 21.2273 14.3563 21.2295C14.362 21.2237 14.3678 21.2179 14.3735 21.2121C14.3584 21.2157 14.3433 21.2193 14.3282 21.2229ZM14.2828 21.2121C14.2381 21.167 14.1939 21.1219 14.1504 21.0767C7.26503 16.9311 9.21492 9.73293 12.0971 4.24423C11.04 3.09968 9.95589 2.07558 8.98598 1.21289C6.32649 7.95522 4.86256 18.9567 14.2828 21.2121ZM14.2828 21.2121C14.2858 21.2152 14.2889 21.2183 14.292 21.2214L14.3 21.2295C14.3094 21.2273 14.3188 21.2251 14.3282 21.2229C14.313 21.2193 14.2979 21.2157 14.2828 21.2121Z"
+                              fill="#FFD9D9"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M14.4859 21.272C20.0329 22.1589 21.5486 20.1786 22.9701 18.3213C23.0622 18.201 23.1539 18.0812 23.2462 17.9628C23.6862 17.3985 24.036 16.917 24.3311 16.5109C25.1946 15.3225 25.5891 14.7795 26.4008 14.6956C27.074 14.6259 27.8586 14.9603 28.5344 15.3654C28.515 15.3486 28.4951 15.3312 28.4745 15.3132C27.882 14.796 26.8037 13.8549 25.5746 13.982C24.4855 14.0947 24.2226 14.2073 22.0069 16.6484C21.7609 16.9194 21.5236 17.1895 21.2901 17.4553C19.4562 19.5424 17.86 21.3591 14.1956 21.1925C14.2374 21.2039 14.2805 21.2157 14.3248 21.2279C14.3769 21.2422 14.4306 21.2569 14.4859 21.272Z"
+                              fill="#FFD9D9"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M24.5148 17.7104C23.9569 18.3404 23.34 19.0368 22.5863 19.7254C19.5183 22.5288 16.1131 21.7109 14.3457 21.232C19.9222 22.1189 21.446 20.1386 22.875 18.2814C22.9676 18.1611 23.0598 18.0413 23.1526 17.9228C23.5949 17.3585 23.9467 16.8771 24.2433 16.471C25.1114 15.2825 25.508 14.7396 26.3241 14.6556C27.0009 14.5859 27.7897 14.9204 28.4691 15.3255C28.4715 15.3275 28.4738 15.3296 28.4761 15.3316C26.8085 15.1209 25.8236 16.2329 24.5148 17.7104Z"
+                              fill="#FFD9D9"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M14.0485 21.272C8.50155 22.1589 6.98581 20.1786 5.56433 18.3213C5.47225 18.201 5.38057 18.0812 5.28821 17.9628C4.84825 17.3985 4.49841 16.917 4.20334 16.5109C3.33982 15.3225 2.94534 14.7795 2.13362 14.6956C1.4604 14.6259 0.675812 14.9603 4.673e-05 15.3654C0.0194063 15.3486 0.0393639 15.3312 0.0599051 15.3132C0.652464 14.796 1.73076 13.8549 2.95983 13.982C4.04891 14.0947 4.3118 14.2073 6.52752 16.6484C6.77349 16.9194 7.01085 17.1895 7.24435 17.4553C9.07821 19.5424 10.6745 21.3591 14.3389 21.1925C14.297 21.2039 14.2539 21.2157 14.2096 21.2279C14.1576 21.2422 14.1038 21.2569 14.0485 21.272Z"
+                              fill="#FFD9D9"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M4.01959 17.7104C4.57757 18.3404 5.19441 19.0368 5.94811 19.7254C9.01616 22.5288 12.4213 21.7109 14.1887 21.232C8.61227 22.1189 7.08844 20.1386 5.65938 18.2814C5.56681 18.1611 5.47464 18.0413 5.38179 17.9228C4.93948 17.3585 4.58777 16.8771 4.29113 16.471C3.42299 15.2825 3.0264 14.7396 2.21035 14.6556C1.53349 14.5859 0.744661 14.9204 0.0652607 15.3255C0.0629299 15.3276 0.0606068 15.3296 0.0582932 15.3316C1.72589 15.1209 2.71084 16.2329 4.01959 17.7104Z"
+                              fill="#FFD9D9"/>
+                    </svg>
+                    <div class="footer-text py-2 px-3">
+                        Flowershop trade mark and logo is a property of World Wide Company
+                        All rights reserved. Any commercial or unauthorized use - prohibited.
+                    </div>
+                    <ul class="socials">
+                        <li class="socials-item">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </li>
+                        <li class="socials-item">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </li>
+                        <li class="socials-item">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </li>
+                        <li class="socials-item">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+
+                </div>
+                <!--/div-->
+                <div class="footer-line"></div>
+                <div class="footer-company-name">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="#FFD9D9" xmlns="http://www.w3.org/2000/svg">
+                        <g id="globe">
+                            <path d="M13.125 6.75H6.25C6.53646 4.97917 6.99219 3.54688 7.61719 2.45312C8.24219 1.35938
+                        8.93229 0.8125 9.6875 0.8125C10.4427 0.8125 11.1328 1.35938 11.7578 2.45312C12.3828 3.54688
+                        12.8385 4.97917 13.125 6.75ZM6.05469 13C5.97656 12.1667 5.9375 11.3333 5.9375 10.5C5.9375
+                        9.66667 5.97656 8.83333 6.05469 8H13.3203C13.3984 8.83333 13.4375 9.66667 13.4375 10.5C13.4375
+                        11.3333 13.3984 12.1667 13.3203 13H6.05469ZM18.6328 6.75H14.4141C14.0234 4.35417 13.3724 2.50521
+                        12.4609 1.20312C13.8411 1.61979 15.0651 2.32292 16.1328 3.3125C17.2266 4.27604 18.0599 5.42188
+                        18.6328 6.75ZM6.91406 1.20312C5.97656 2.50521 5.32552 4.35417 4.96094 6.75H0.742188C1.3151
+                        5.42188 2.13542 4.27604 3.20312 3.3125C4.29688 2.32292 5.53385 1.61979 6.91406 1.20312ZM19.0234
+                        8C19.2578 8.83333 19.375 9.66667 19.375 10.5C19.375 11.3333 19.2578 12.1667 19.0234
+                        13H14.5703C14.6484 12.1406 14.6875 11.3073 14.6875 10.5C14.6875 9.69271 14.6484 8.85938 14.5703
+                        8H19.0234ZM4.6875 10.5C4.6875 11.2812 4.72656 12.1146 4.80469 13H0.351562C0.117188 12.1406 0
+                        11.3073 0 10.5C0 9.69271 0.117188 8.85938 0.351562 8H4.80469C4.72656 8.85938 4.6875 9.69271
+                        4.6875 10.5ZM6.25 14.25H13.125C12.8385 16.0208 12.3828 17.4531 11.7578 18.5469C11.1328 19.6406
+                        10.4427 20.1875 9.6875 20.1875C8.93229 20.1875 8.24219 19.6406 7.61719 18.5469C6.99219 17.4531
+                        6.53646 16.0208 6.25 14.25ZM12.4609 19.7969C13.3984 18.4948 14.0495 16.6458 14.4141
+                        14.25H18.6328C18.0599 15.5781 17.2266 16.737 16.1328 17.7266C15.0651 18.6901 13.8411 19.3802
+                        12.4609 19.7969ZM0.742188 14.25H4.96094C5.35156 16.6458 6.0026 18.4948 6.91406 19.7969C5.53385
+                        19.3802 4.29688 18.6901 3.20312 17.7266C2.13542 16.737 1.3151 15.5781 0.742188 14.25Z"
+                            />
+                        </g>
+                    </svg>
+                    &nbsp;World&nbsp;Wide&nbsp;Company&nbsp;&nbsp;2020
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+<script>
+    "use strict";
+    //$("h1").html("red");
+</script>
+</body>
+</html>

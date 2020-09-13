@@ -1,0 +1,132 @@
+[
+  {
+    "_id": "0",
+    "type": "img",
+    "path": "img/img_0.png",
+    "text": "",
+    "description": "Still life",
+    "like": "false",
+    "bg_color": "#FFF1F1",
+    "desc_color": "#9A7B7B"
+  },
+  {
+    "_id": "1",
+    "type": "img",
+    "path": "img/img_1.png",
+    "text": "",
+    "description": "Lavander",
+    "like": "true",
+    "bg_color": "#FFF1F1",
+    "desc_color": "#9A7B7B"
+  },
+  {
+    "_id": "2",
+    "type": "img",
+    "path": "img/img_2.png",
+    "text": "",
+    "description": "Still life",
+    "like": "true",
+    "bg_color": "#FFF1F1",
+    "desc_color": "white"
+  },
+  {
+    "_id": "3",
+    "type": "img",
+    "path": "img/img_3.png",
+    "text": "",
+    "description": "Artwork",
+    "like": "true",
+    "bg_color": "#FFF1F1",
+    "desc_color": "#9A7B7B"
+  },
+  {
+    "_id": "4",
+    "type": "img",
+    "path": "img/img_1.png",
+    "text": "",
+    "description": "Still life",
+    "like": "true",
+    "bg_color": "#FFF1F1",
+    "desc_color": "#9A7B7B"
+  },
+  {
+    "_id": "5",
+    "type": "img",
+    "path": "img/img_3.png",
+    "text": "",
+    "description": "Boquette",
+    "like": "true",
+    "bg_color": "#FFF1F1",
+    "desc_color": "#9A7B7B"
+  },
+  {
+    "_id": "6",
+    "type": "txt",
+    "path": "",
+    "text": "Because all of our customers are important, our professional staff is dedicated to making your experience a pleasant one. That is why we always go the extra mile to make your floral gift perfect. Let Just Imagine be your first choice for flowers",
+    "description": "",
+    "like": "",
+    "bg_color": "#FFF1F1",
+    "desc_color": "#9A7B7B"
+  },
+  {
+    "_id": "7",
+    "type": "img",
+    "path": "img/img_1.png",
+    "text": "",
+    "description": "Craft",
+    "like": "true",
+    "bg_color": "#FFF1F1",
+    "desc_color": "#9A7B7B"
+  },
+  {
+    "_id": "8",
+    "type": "img",
+    "path": "img/img_2.png",
+    "text": "",
+    "description": "Still life",
+    "like": "true",
+    "bg_color": "#FFF1F1",
+    "desc_color": "white"
+  },
+  {
+    "_id": "9",
+    "type": "txt",
+    "path": "",
+    "text": "We have grown from a small floral room, and small retail space to a full running shop with a large aray of products, fresh floral, and CBD products. This is all that really matters!",
+    "description": "",
+    "like": "",
+    "bg_color": "#FFD9D9",
+    "desc_color": "#9A7B7B"
+  },
+  {
+    "_id": "10",
+    "type": "img",
+    "path": "img/img_0.png",
+    "text": "",
+    "description": "Enjoy",
+    "like": "true",
+    "bg_color": "#FFF1F1",
+    "desc_color": "#9A7B7B"
+  },
+  {
+    "_id": "11",
+    "type": "img",
+    "path": "img/img_4.png",
+    "text": "",
+    "description": "Create",
+    "like": "true",
+    "bg_color": "#FFF1F1",
+    "desc_color": "white"
+  },
+  {
+    "_id": "12",
+    "type": "img",
+    "path": "img/img_1.png",
+    "text": "",
+    "description": "Compose",
+    "like": "true",
+    "bg_color": "#FFF1F1",
+    "desc_color": "#9A7B7B"
+  }
+]

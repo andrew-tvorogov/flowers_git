@@ -21,7 +21,7 @@ function reqListener() {
                         </div-->
                         <div class="card-overlay">
                             <div class="card-name">${el.description}</div>
-                            <div class="card-like">
+                            <div class="card-like" data-like="${el.like}">
                                 <i class="fa fa-heart" aria-hidden="true"></i>
                             </div>
                         </div>

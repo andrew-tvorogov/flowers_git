@@ -8,7 +8,7 @@ function reqListener() {
     cards = JSON.parse(this.responseText);
     cards.forEach(function (el) {
         //out.innerHTML += `<p class="item-str" data-id="${el.id}">` + el.name + ' ' + el.price + 'rub</p><br>';
-        console.log(el);
+        //console.log(el);
         if (el.type === "img") {
             out.innerHTML += `
                 <div class="col p-2">

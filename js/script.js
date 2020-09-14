@@ -22,7 +22,7 @@ function reqListener() {
                         <div class="card-overlay">
                             <div class="card-name">${el.description}</div>
                             <div class="card-like" data-like="${el.like}">
-                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -43,9 +43,25 @@ function reqListener() {
             `;
         }
     });
+    let likes = document.querySelectorAll(".card-like");
+    likes.forEach(function (like) {
+        let likeOn = false; // базовое состояние like
+        like.addEventListener("click", function () {
+            if (likeOn === false) {
+                like.innerHTML = '<i class="fa fa-heart" aria-hidden="true"></i>';
+                likeOn = true;
+            } else {
+                like.innerHTML = '<i class="fa fa-heart-o" aria-hidden="true"></i>';
+                likeOn = false;
+            }
+        })
+    });
+
+
 }
 
 let oReq = new XMLHttpRequest();
 oReq.onload = reqListener;
 oReq.open("GET", "img.json", true);
 oReq.send();
+
